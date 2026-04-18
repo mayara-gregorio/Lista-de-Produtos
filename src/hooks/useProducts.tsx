@@ -6,8 +6,9 @@ type Product = {
   thumbnail: string
 }
 
-export default function useproducts(){
+export default function useProducts(){
   const [productsList, setProductsList] = useState<Product[]>([])
+  //adicionar estado de carregando
 
   useEffect(()=>{
     const controller = new AbortController()

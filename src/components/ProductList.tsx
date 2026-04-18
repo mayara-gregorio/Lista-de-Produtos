@@ -1,8 +1,7 @@
-import useproducts from "../hooks/useProducts";
+import useProducts from "../hooks/useProducts";
 
 export function ProductList (){
-  const {productsList} = useproducts()
-
+  const {productsList} = useProducts()
   return(
   <div>
      {productsList.map(product => (
